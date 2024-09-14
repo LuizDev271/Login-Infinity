@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Control</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--Font Awesone-->
+    <script src="https://kit.fontawesome.com/4fe87b1342.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+
+        .col-12{
+            flex: none;
+        }
+
+        body, html, .d-flex{
+            height: 100%;
+            width: 100%;
+        }
+
+        #direita{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            height: 100%;
+            background-color: white;
+        }
+
+        #direita img{
+            padding-bottom: 5px;
+        }
+
+        #direita h3{
+            letter-spacing: 1px;
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+
+        #esquerda{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: url('imagens/fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #esquerda h1{
+            color: white;
+
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Roboto', Helvetica, sans-serif;
+            font-size: 46px;
+            letter-spacing: 3px;
+        }
+
+        #esquerda p{
+            width: 580px;
+
+            color: white;
+
+            text-align: start;
+            font-family: 'Roboto', Helvetica, sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        #laranja{
+            color: #cc9123;
+        }
+
+        input.form-control{
+            border-radius: 0px;
+            border: 1px solid #0000006b;
+            margin-bottom: 35px;
+        }
+
+        input.form-control::placeholder{
+            font-size: 18px;
+        }
+
+        #check{
+            width: 30px;
+            height: 30px;
+            margin-right: 3px;
+        }
+
+        a, #direita p{
+            font-size: 18px; 
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="d-flex">
+        <div id="esquerda" class="col-8">
+            <div>
+                <h1>BEM VINDO AO <span id="laranja">INFINITY</span></h1>
+                <p>Mantenha sua equipe conectada por videoconferência empresarial, um recurso criado com a segurança e eficiência da infraestrutura infinity</p>
+            </div>
+        </div>
+        <div id="direita" class="col-4">
+
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 40px 0;">
+                <img src="imagens/Logo.png" width="150" alt="logo">
+                <h3>Acesse sua conta</h3>
+            </div>
+
+            <input class="form-control" type="email" placeholder="Email">
+            <input class="form-control" type="pass" placeholder="Senha">
+
+            <div class="col-12" style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center;">
+                    <input style="display: inline;" type="checkbox" name="check" id="check">
+                    <span style="font-size: 20px;">Lembrar-me</span>
+                </div>
+
+                <a href="#">Esqueci a Senha</a>
+            </div>
+
+            <button class="btn form-control" style="height: 50px; border-radius: 15px; margin: 40px 40px 20px 40px; background-color: tomato; color: white; font-size: 20px;" type="button">Login</button>
+
+            <div style="display: flex; width: 98%;padding-bottom: 30px;">
+                <button class="btn form-control m-1" style="border-radius: 15px; background-color: blueviolet; color: white;" type="button">Facebook</button>
+
+                <button class="btn form-control m-1" style="border-radius: 15px; background-color: deepskyblue; color: white;" type="button">Twitter</button>
+
+                <button class="btn form-control m-1" style="border-radius: 15px; background-color: red; color: white;" type="button">Google</button> 
+            </div>
+            
+            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
