@@ -34,6 +34,7 @@
 
         #direita{
             display: flex;
+            justify-content: center;
             align-items: center;
             flex-direction: column;
 
@@ -115,14 +116,14 @@
 
 </head>
 <body>
-    <div class="d-flex">
-        <div id="esquerda" class="col-8">
+    <div class="d-flex justify-content-center">
+        <div id="esquerda" class="col-8 d-none d-md-flex">
             <div>
                 <h1>BEM VINDO AO <span id="laranja">INFINITY</span></h1>
                 <p>Mantenha sua equipe conectada por videoconferência empresarial, um recurso criado com a segurança e eficiência da infraestrutura infinity</p>
             </div>
         </div>
-        <div id="direita" class="col-4">
+        <div id="direita" class="col-8 col-md-4">
 
             <div style="display: flex; flex-direction: column; align-items: center; padding: 40px 0;">
                 <img src="imagens/Logo.png" width="150" alt="logo">
