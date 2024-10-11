@@ -25,6 +25,7 @@
 
         .col-12{
             flex: none;
+            padding: 0;
         }
 
         body, html, .d-flex{
@@ -112,6 +113,21 @@
             color: black;
         }
 
+        #lembrar{
+            font-size: 20px;
+        }
+
+        @media (max-width: 575.98px){
+            #email{
+                margin-bottom: 20px;
+            }
+
+            #lembrar, .col-12 a{
+                font-size: 18px;
+            }
+
+        }
+
     </style>
 
 </head>
@@ -123,23 +139,23 @@
                 <p>Mantenha sua equipe conectada por videoconferência empresarial, um recurso criado com a segurança e eficiência da infraestrutura infinity</p>
             </div>
         </div>
-        <div id="direita" class="col-8 col-md-4 justify-content-center">
+        <div id="direita" class="col-10 col-md-4 justify-content-center">
 
             <div style="display: flex; flex-direction: column; align-items: center; padding: 40px 0;">
                 <img src="imagens/Logo.png" width="150" alt="logo">
                 <h3>Acesse sua conta</h3>
             </div>
 
-            <input class="form-control" type="email" placeholder="Email">
+            <input id="email" class="form-control" type="email" placeholder="Email">
             <input class="form-control" type="pass" placeholder="Senha">
 
             <div class="col-12" style="display: flex; align-items: center; justify-content: space-between;">
                 <div style="display: flex; align-items: center;">
                     <input style="display: inline;" type="checkbox" name="check" id="check">
-                    <span style="font-size: 20px;">Lembrar-me</span>
+                    <span id="lembrar">Lembrar-me</span>
                 </div>
 
-                <a href="#">Esqueci a Senha</a>
+                <a href="#" id="esqueci">Esqueci a Senha</a>
             </div>
 
             <button class="btn form-control" style="height: 50px; border-radius: 15px; margin: 40px 40px 20px 40px; background-color: tomato; color: white; font-size: 20px;" type="button">Login</button>
